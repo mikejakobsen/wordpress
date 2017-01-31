@@ -1,7 +1,7 @@
 # Wordpress Theme
 
 
-![Mike](assets/mike.png)
+![Mike](http://www.mikejakobsen.com/mike.png)
 
 
 ##### mikejakobsen.com 
