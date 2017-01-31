@@ -1,0 +1,47 @@
+/* Admin Icons */
+@import "common/_variables";
+// Automatically injected Bower dependencies via wiredep (never manually edit this block)
+// bower:scss
+@import "../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_variables.scss";
+
+#wpadminbar {
+
+  #wp-admin-bar-wp-logo {
+
+    .ab-item {
+      height: 46px;
+      width: 50px;
+
+      .ab-icon {
+        display: none;
+
+        &:before {
+          content: "";
+          top: 0;
+        }
+      }
+
+    }
+
+    @media (min-width: $screen-md-min) {
+      .ab-item {
+        height: 44px;
+        width: 146px;
+        background: url('#{$styles-admin-path}ignite-logo-white.png') 10px 5px no-repeat;
+        background-size: auto 35px;
+      }
+    }
+
+    a {
+      width: 32px;
+    }
+
+    @media (min-width: $screen-sm-min) {
+      a {
+        width: 145px;
+      }
+    }
+
+  }
+
+}

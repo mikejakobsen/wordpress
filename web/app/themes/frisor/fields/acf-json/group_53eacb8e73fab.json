@@ -1,0 +1,1467 @@
+{
+    "key": "group_53eacb8e73fab",
+    "title": "Indstillinger",
+    "fields": [
+        {
+            "message": "<h3>Fris\u00f8rWeb indstillinger.<\/br> Her finder du alle indstillinger som kunden ikke har adgang til.<\/h3>",
+            "esc_html": 0,
+            "new_lines": "wpautop",
+            "key": "field_553f7b69642ab",
+            "label": "",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "placement": "left",
+            "endpoint": 0,
+            "key": "field_53ead060e62f6",
+            "label": "Loginsiden",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "layout": "horizontal",
+            "choices": {
+                "1": "Ja",
+                "0": "Nej"
+            },
+            "default_value": 0,
+            "other_choice": 0,
+            "save_other_choice": 0,
+            "allow_null": 0,
+            "return_format": "value",
+            "key": "field_53eacbe89fc13",
+            "label": "H\u00f8ks WordPress logo",
+            "name": "disable_logo",
+            "type": "radio",
+            "instructions": "Tilf\u00f8jer eller fjerner \"H\u00f8ks logoet\" fra WordPress administratorsiden. Det viste logo kan \u00e6ndres herunder.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "layout": "horizontal",
+            "choices": {
+                "1": "Ja",
+                "0": "Nej"
+            },
+            "default_value": 0,
+            "other_choice": 0,
+            "save_other_choice": 0,
+            "allow_null": 0,
+            "return_format": "value",
+            "key": "field_53eace0f90453",
+            "label": "",
+            "name": "update_logo",
+            "type": "radio",
+            "instructions": "\u00d8nsker du at \u00e6ndre \"H\u00f8ks logoet\".",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_53eacbe89fc13",
+                        "operator": "==",
+                        "value": "0"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "return_format": "url",
+            "preview_size": "thumbnail",
+            "library": "uploadedTo",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": "",
+            "key": "field_53eacfa919783",
+            "label": "Opdater Fris\u00f8rWeb logoet",
+            "name": "upload_logo",
+            "type": "image",
+            "instructions": "Upload dit eget billede der vises p\u00e5 Wp-admin siden",
+            "required": 1,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_53eace0f90453",
+                        "operator": "==",
+                        "value": "1"
+                    },
+                    {
+                        "field": "field_53eacbe89fc13",
+                        "operator": "==",
+                        "value": "0"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": 60,
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "layout": "horizontal",
+            "choices": {
+                "1": "Ja",
+                "0": "Nej"
+            },
+            "default_value": 0,
+            "other_choice": 0,
+            "save_other_choice": 0,
+            "allow_null": 0,
+            "return_format": "value",
+            "key": "field_53f164e2f5e13",
+            "label": "Opdater favicon",
+            "name": "update_favicon",
+            "type": "radio",
+            "instructions": "\u00d8nksker du at opdatere favicon.",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_53eacbe89fc13",
+                        "operator": "==",
+                        "value": "0"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "return_format": "url",
+            "preview_size": "thumbnail",
+            "library": "uploadedTo",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": "",
+            "key": "field_53f16505f5e14",
+            "label": "Upload Favicon",
+            "name": "upload_favicon",
+            "type": "image",
+            "instructions": "Upload et favicon.\r\n<br \/>\r\n<small>Favicons skal v\u00e6re .ico format og have en st\u00f8rrelse p\u00e5 16 x 16 pixels.<\/small>",
+            "required": 1,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_53f164e2f5e13",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "placement": "left",
+            "endpoint": 0,
+            "key": "field_53ead3238ec4b",
+            "label": "Dashboard",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "layout": "horizontal",
+            "choices": {
+                "1": "Ja",
+                "0": "Nej"
+            },
+            "default_value": 0,
+            "other_choice": 0,
+            "save_other_choice": 0,
+            "allow_null": 0,
+            "return_format": "value",
+            "key": "field_53f146b3db374",
+            "label": "Sl\u00e5 ikonet øverst fra",
+            "name": "disable_icon",
+            "type": "radio",
+            "instructions": "Deaktiver Høks logoet øverst der erstatter WordPress eget.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "layout": "horizontal",
+            "choices": {
+                "1": "Ja",
+                "0": "Nej"
+            },
+            "default_value": 0,
+            "other_choice": 0,
+            "save_other_choice": 0,
+            "allow_null": 0,
+            "return_format": "value",
+            "key": "field_53f14777db375",
+            "label": "Vælg et andet logo",
+            "name": "update_icon",
+            "type": "radio",
+            "instructions": "Vælg et andet logo til at erstattet WordPress logoet øverst til venstre.",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_53f146b3db374",
+                        "operator": "==",
+                        "value": "0"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "return_format": "url",
+            "preview_size": "thumbnail",
+            "library": "uploadedTo",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": "",
+            "key": "field_53f147fddb378",
+            "label": "Upload logo",
+            "name": "upload_icon",
+            "type": "image",
+            "instructions": "Upload logo til at erstatte logoet øverst til venstre\r\n<br \/>\r\n<small>Logoet skal være 133 x 20 pixels..<\/small>",
+            "required": 1,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_53f14777db375",
+                        "operator": "==",
+                        "value": "1"
+                    },
+                    {
+                        "field": "field_53f146b3db374",
+                        "operator": "==",
+                        "value": "0"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "layout": "horizontal",
+            "choices": {
+                "1": "Ja",
+                "0": "Nej"
+            },
+            "default_value": 1,
+            "other_choice": 0,
+            "save_other_choice": 0,
+            "allow_null": 0,
+            "return_format": "value",
+            "key": "field_53f148ea0f017",
+            "label": "Vis \"About WordPress\" menuen",
+            "name": "enable_about_menu",
+            "type": "radio",
+            "instructions": "Skal \"About Wordpress\" vises for brugeren",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "layout": "horizontal",
+            "choices": {
+                "1": "Ja",
+                "0": "Nej"
+            },
+            "default_value": 0,
+            "other_choice": 0,
+            "save_other_choice": 0,
+            "allow_null": 0,
+            "return_format": "value",
+            "key": "field_53f15157d18ce",
+            "label": "Vis \"WordPress.org\" menuen",
+            "name": "enable_wordpress_menu",
+            "type": "radio",
+            "instructions": "Vis \"WordPress.org\" menu from the Top menuen.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "layout": "horizontal",
+            "choices": {
+                "1": "Ja",
+                "0": "Nej"
+            },
+            "default_value": 0,
+            "other_choice": 0,
+            "save_other_choice": 0,
+            "allow_null": 0,
+            "return_format": "value",
+            "key": "field_53f149520f018",
+            "label": "Vis \"Documentation\" menuen",
+            "name": "enable_doc_menu",
+            "type": "radio",
+            "instructions": "Vis \"Documentation\" menu from the Top menuen.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "layout": "horizontal",
+            "choices": {
+                "1": "Ja",
+                "0": "Nej"
+            },
+            "default_value": 0,
+            "other_choice": 0,
+            "save_other_choice": 0,
+            "allow_null": 0,
+            "return_format": "value",
+            "key": "field_53f14a0ce9a82",
+            "label": "Vis \"Support Forums\" menuen",
+            "name": "enable_forums_menu",
+            "type": "radio",
+            "instructions": "Vis \"Support Forums\" menu from the Top menuen.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "layout": "horizontal",
+            "choices": {
+                "1": "Ja",
+                "0": "Nej"
+            },
+            "default_value": 0,
+            "other_choice": 0,
+            "save_other_choice": 0,
+            "allow_null": 0,
+            "return_format": "value",
+            "key": "field_53f14a75e9a83",
+            "label": "Vis \"Feedback\" menuen",
+            "name": "enable_feedback_menu",
+            "type": "radio",
+            "instructions": "Vis \"Feedback\" menu from the Top menuen.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "layout": "horizontal",
+            "choices": {
+                "1": "Ja",
+                "0": "Nej"
+            },
+            "default_value": 1,
+            "other_choice": 0,
+            "save_other_choice": 0,
+            "allow_null": 0,
+            "return_format": "value",
+            "key": "field_53f14a9ce9a84",
+            "label": "Vis \"Site Name\" menuen",
+            "name": "enable_site_menu",
+            "type": "radio",
+            "instructions": "Vis \"Site Name \" menu from the Top menuen.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "layout": "horizontal",
+            "choices": {
+                "1": "Ja",
+                "0": "Nej"
+            },
+            "default_value": 0,
+            "other_choice": 0,
+            "save_other_choice": 0,
+            "allow_null": 0,
+            "return_format": "value",
+            "key": "field_53f14ad5e9a85",
+            "label": "Vis \"Comments\" menuen",
+            "name": "enable_top_comments_menu",
+            "type": "radio",
+            "instructions": "Vis \"Comments\" menu from the Top menuen.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "layout": "horizontal",
+            "choices": {
+                "1": "Ja",
+                "0": "Nej"
+            },
+            "default_value": 0,
+            "other_choice": 0,
+            "save_other_choice": 0,
+            "allow_null": 0,
+            "return_format": "value",
+            "key": "field_53f14b0ce9a86",
+            "label": "Vis \"New Content\" menuen",
+            "name": "enable_new_menu",
+            "type": "radio",
+            "instructions": "Vis \"New Content\" menu from the Top menuen.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "layout": "horizontal",
+            "choices": {
+                "1": "Ja",
+                "0": "Nej"
+            },
+            "default_value": 0,
+            "other_choice": 0,
+            "save_other_choice": 0,
+            "allow_null": 0,
+            "return_format": "value",
+            "key": "field_5540dd6cbee00",
+            "label": "Vis \"WordPress SEO\" menuen",
+            "name": "enable_yoast_menu",
+            "type": "radio",
+            "instructions": "Vis \"WordPress SEO\" menu from the Top menuen.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "placement": "left",
+            "endpoint": 0,
+            "key": "field_53f1484edb379",
+            "label": "Venstre menu",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "layout": "horizontal",
+            "choices": {
+                "1": "Ja",
+                "0": "Nej"
+            },
+            "default_value": 1,
+            "other_choice": 0,
+            "save_other_choice": 0,
+            "allow_null": 0,
+            "return_format": "value",
+            "key": "field_53ed95ecf2afc",
+            "label": "Vis \"Updates\" menuen",
+            "name": "enable_updates_menu",
+            "type": "radio",
+            "instructions": "Vis \"Updates\" menu from the Dashboard.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "layout": "horizontal",
+            "choices": {
+                "1": "Ja",
+                "0": "Nej"
+            },
+            "default_value": 1,
+            "other_choice": 0,
+            "save_other_choice": 0,
+            "allow_null": 0,
+            "return_format": "value",
+            "key": "field_53ed895b027e3",
+            "label": "Vis \"Posts\" menuen",
+            "name": "enable_posts_menu",
+            "type": "radio",
+            "instructions": "Vis \"Posts\" menu from the Dashboard.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "layout": "horizontal",
+            "choices": {
+                "1": "Ja",
+                "0": "Nej"
+            },
+            "default_value": 1,
+            "other_choice": 0,
+            "save_other_choice": 0,
+            "allow_null": 0,
+            "return_format": "value",
+            "key": "field_53ed8a12cf328",
+            "label": "Vis \"Media\" menuen",
+            "name": "enable_media_menu",
+            "type": "radio",
+            "instructions": "Vis \"Media\" menu from the Dashboard.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "layout": "horizontal",
+            "choices": {
+                "1": "Ja",
+                "0": "Nej"
+            },
+            "default_value": 1,
+            "other_choice": 0,
+            "save_other_choice": 0,
+            "allow_null": 0,
+            "return_format": "value",
+            "key": "field_53ed8a45cf32a",
+            "label": "Vis \"Pages\" menuen",
+            "name": "enable_pages_menu",
+            "type": "radio",
+            "instructions": "Vis \"Pages\" menu from the Dashboard.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "layout": "horizontal",
+            "choices": {
+                "1": "Ja",
+                "0": "Nej"
+            },
+            "default_value": 0,
+            "other_choice": 0,
+            "save_other_choice": 0,
+            "allow_null": 0,
+            "return_format": "value",
+            "key": "field_53ed8a3dcf329",
+            "label": "Vis \"Comments\" menuen",
+            "name": "enable_comments_menu",
+            "type": "radio",
+            "instructions": "Vis \"Comments\" menu from the Dashboard.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "layout": "horizontal",
+            "choices": {
+                "1": "Ja",
+                "0": "Nej"
+            },
+            "default_value": 1,
+            "other_choice": 0,
+            "save_other_choice": 0,
+            "allow_null": 0,
+            "return_format": "value",
+            "key": "field_53ed8ab4cf32b",
+            "label": "Vis \"Appearance\" menuen",
+            "name": "enable_appearance_menu",
+            "type": "radio",
+            "instructions": "Vis \"Appearance\" menu from the Dashboard.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "layout": "horizontal",
+            "choices": {
+                "1": "Ja",
+                "0": "Nej"
+            },
+            "default_value": 1,
+            "other_choice": 0,
+            "save_other_choice": 0,
+            "allow_null": 0,
+            "return_format": "value",
+            "key": "field_53ed8af9cf32c",
+            "label": "Vis \"Plugins\" menuen",
+            "name": "enable_plugins_menu",
+            "type": "radio",
+            "instructions": "Vis \"Plugins\" menu from the Dashboard.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "layout": "horizontal",
+            "choices": {
+                "1": "Ja",
+                "0": "Nej"
+            },
+            "default_value": 1,
+            "other_choice": 0,
+            "save_other_choice": 0,
+            "allow_null": 0,
+            "return_format": "value",
+            "key": "field_53ed8b23cf32d",
+            "label": "Vis \"Users\" menuen",
+            "name": "enable_users_menu",
+            "type": "radio",
+            "instructions": "Vis \"Users\" menu from the Dashboard.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "layout": "horizontal",
+            "choices": {
+                "1": "Ja",
+                "0": "Nej"
+            },
+            "default_value": 1,
+            "other_choice": 0,
+            "save_other_choice": 0,
+            "allow_null": 0,
+            "return_format": "value",
+            "key": "field_53ed8b55cf32e",
+            "label": "Vis \"Tools\" menuen",
+            "name": "enable_tools_menu",
+            "type": "radio",
+            "instructions": "Vis \"Tools\" menu from the Dashboard.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "layout": "horizontal",
+            "choices": {
+                "1": "Ja",
+                "0": "Nej"
+            },
+            "default_value": 1,
+            "other_choice": 0,
+            "save_other_choice": 0,
+            "allow_null": 0,
+            "return_format": "value",
+            "key": "field_53ed8ba4cf32f",
+            "label": "Vis \"Settings\" menuen",
+            "name": "enable_settings_menu",
+            "type": "radio",
+            "instructions": "Vis \"Settings\" menu from the Dashboard.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "placement": "left",
+            "endpoint": 0,
+            "key": "field_53ead3078ec4a",
+            "label": "Dashboard",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "layout": "horizontal",
+            "choices": {
+                "1": "Ja",
+                "0": "Nej"
+            },
+            "default_value": 0,
+            "other_choice": 0,
+            "save_other_choice": 0,
+            "allow_null": 0,
+            "return_format": "value",
+            "key": "field_53eade2e20dbd",
+            "label": "Vis Welcome Widget",
+            "name": "enable_wp_dashboard",
+            "type": "radio",
+            "instructions": "WordPress Welcome Widget.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "layout": "horizontal",
+            "choices": {
+                "1": "Ja",
+                "0": "Nej"
+            },
+            "default_value": 0,
+            "other_choice": 0,
+            "save_other_choice": 0,
+            "allow_null": 0,
+            "return_format": "value",
+            "key": "field_53eadf259affd",
+            "label": "Vis \"At a Glance\" Widget",
+            "name": "enable_wp_rightnow",
+            "type": "radio",
+            "instructions": "Vis \"Right Now\" Widget.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "layout": "horizontal",
+            "choices": {
+                "1": "Ja",
+                "0": "Nej"
+            },
+            "default_value": 0,
+            "other_choice": 0,
+            "save_other_choice": 0,
+            "allow_null": 0,
+            "return_format": "value",
+            "key": "field_53eae1a397069",
+            "label": "Vis \"Quick Draft\" Widget",
+            "name": "enable_wp_quickdraft",
+            "type": "radio",
+            "instructions": "Vis \"Quick Draft\" Widget.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "layout": "horizontal",
+            "choices": {
+                "1": "Ja",
+                "0": "Nej"
+            },
+            "default_value": 0,
+            "other_choice": 0,
+            "save_other_choice": 0,
+            "allow_null": 0,
+            "return_format": "value",
+            "key": "field_53eae4f5e5d06",
+            "label": "Vis \"Activity\" Widget",
+            "name": "enable_wp_activity",
+            "type": "radio",
+            "instructions": "Vis \"Activity\" Widget.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "layout": "horizontal",
+            "choices": {
+                "1": "Ja",
+                "0": "Nej"
+            },
+            "default_value": 0,
+            "other_choice": 0,
+            "save_other_choice": 0,
+            "allow_null": 0,
+            "return_format": "value",
+            "key": "field_53eae5307eda5",
+            "label": "Vis \"WordPress News\" Widget",
+            "name": "enable_wp_wordpressnews",
+            "type": "radio",
+            "instructions": "Vis \"WordPress News\" Widget.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "layout": "horizontal",
+            "choices": {
+                "1": "Ja",
+                "0": "Nej"
+            },
+            "default_value": 0,
+            "other_choice": 0,
+            "save_other_choice": 0,
+            "allow_null": 0,
+            "return_format": "value",
+            "key": "field_53eae7426110f",
+            "label": "Vis \"Control Panel\" Widget",
+            "name": "disable_controlpanel",
+            "type": "radio",
+            "instructions": "Vis \"Control Panel\" Widget.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "default_value": "Velkommen til din nye FrisorWeb side",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "key": "field_53eae89a47164",
+            "label": "Opdatet titlen i Kontrolpanelet",
+            "name": "control_panel_title",
+            "type": "text",
+            "instructions": "Skriv en ny titel til Kontrolpanelet. \r\n<br \/>\r\nStandard titlen bliver vist, hvis du ikke skriver noget.",
+            "required": 1,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_53eae7426110f",
+                        "operator": "==",
+                        "value": "0"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "default_value": "<p>Velkommen til din nye FrisorWeb hjemmeside.<\/p>\r\n\r\n<p>Her finder du alle relevante indstillinger for din nye hjemmeside. Lig is\u00e6r m\u00e6rke til menu til venstre, der indeholder alle relevante muligheder.<\/p>",
+            "delay": 0,
+            "key": "field_53eae7f747163",
+            "label": "\u00c6ndre velkomstbeskeden i kontrolpanelet",
+            "name": "control_panel_message",
+            "type": "wysiwyg",
+            "instructions": "Skriv hvad du \u00f8nsker brugeren skal se.",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_53eae7426110f",
+                        "operator": "==",
+                        "value": "0"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "layout": "horizontal",
+            "choices": {
+                "1": "Ja",
+                "0": "Nej"
+            },
+            "default_value": 0,
+            "other_choice": 0,
+            "save_other_choice": 0,
+            "allow_null": 0,
+            "return_format": "value",
+            "key": "field_53eaeaf84f835",
+            "label": "Sl\u00e5 \"Teknisk info\" widget fra",
+            "name": "disable_technicalinfo",
+            "type": "radio",
+            "instructions": "Sl\u00e5 \"Teknisk info\" widgetten fra",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "display_format": "F j, Y",
+            "return_format": "F j, Y",
+            "first_day": 1,
+            "key": "field_53eaeb48d7526",
+            "label": "Opdater oprettelsesdatoen",
+            "name": "release_date",
+            "type": "date_picker",
+            "instructions": "Opdater oprettelsesdatoen",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_53eaeaf84f835",
+                        "operator": "==",
+                        "value": "0"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "display_format": "F j, Y",
+            "return_format": "F j, Y",
+            "first_day": 1,
+            "key": "field_53eaebc7d7528",
+            "label": "Opdater seneste opdateringsdato",
+            "name": "latest_date",
+            "type": "date_picker",
+            "instructions": "Opdater seneste opdateringsdato",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_53eaeaf84f835",
+                        "operator": "==",
+                        "value": "0"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "default_value": "Fris\u00f8rWeb",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "key": "field_53eaec26d7529",
+            "label": "\u00c6ndre tema navn",
+            "name": "theme_name",
+            "type": "text",
+            "instructions": "\u00c6ndre tema navn.",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_53eaeaf84f835",
+                        "operator": "==",
+                        "value": "0"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "default_value": "1.0.5",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "key": "field_53eaec60d752a",
+            "label": "Opdater tema version",
+            "name": "theme_version",
+            "type": "text",
+            "instructions": "Opdater tema version.",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_53eaeaf84f835",
+                        "operator": "==",
+                        "value": "0"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "layout": "horizontal",
+            "choices": {
+                "1": "Ja",
+                "0": "Nej"
+            },
+            "default_value": 1,
+            "other_choice": 0,
+            "save_other_choice": 0,
+            "allow_null": 0,
+            "return_format": "value",
+            "key": "field_53ec64e070b08",
+            "label": "Sl\u00e5 \"RSS\" Widgetten fra",
+            "name": "disable_rss",
+            "type": "radio",
+            "instructions": "Sl\u00e5 H\u00f8ks RSS feedet fra.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "default_value": "Fris\u00f8rWeb nyheder",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "key": "field_53ec651270b09",
+            "label": "\u00c6ndre Fris\u00f8rWeb nyheder titlen",
+            "name": "rss_title",
+            "type": "text",
+            "instructions": "Skriv den \u00f8nskede titel.",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_53ec64e070b08",
+                        "operator": "==",
+                        "value": "0"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "default_value": "https:\/\/todayilearned.dk\/feed.xml\/",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "key": "field_53ec657e70b0a",
+            "label": "\u00c6ndre RSS feedet",
+            "name": "rss_feed",
+            "type": "text",
+            "instructions": "Skriv URL til RSS feedet.",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_53ec64e070b08",
+                        "operator": "==",
+                        "value": "0"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "layout": "horizontal",
+            "choices": {
+                "1": "Ja",
+                "0": "Nej"
+            },
+            "default_value": 0,
+            "other_choice": 0,
+            "save_other_choice": 0,
+            "allow_null": 0,
+            "return_format": "value",
+            "key": "field_53ed5a958436b",
+            "label": "Deaktiver \"Support\" Widgetten",
+            "name": "disable_support",
+            "type": "radio",
+            "instructions": "Deaktiver H\u00f8ks Support beskeden i Kontrolpanelet",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "return_format": "url",
+            "preview_size": "thumbnail",
+            "library": "uploadedTo",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": "",
+            "key": "field_53ed603809964",
+            "label": "Upload Support logo",
+            "name": "support_logo",
+            "type": "image",
+            "instructions": "Opdater logoet der bliver vist som en del af Support Widgetten.",
+            "required": 1,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_53ed5a958436b",
+                        "operator": "==",
+                        "value": "0"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "default_value": "http:\/\/h\u00f8ks.dk\/kontakt\/",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "key": "field_53ed5b0a3fdce",
+            "label": "\u00c6ndre support URL",
+            "name": "support_url",
+            "type": "text",
+            "instructions": "Inds\u00e6t det \u00f8nskede link til supportsiden.",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_53ed5a958436b",
+                        "operator": "==",
+                        "value": "0"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "default_value": "<p>Skriv til os, hvis du har sp\u00f8rgsm\u00e5l.<\/p>",
+            "delay": 0,
+            "key": "field_53ed5b793fdcf",
+            "label": "\u00c6ndre support beskeden",
+            "name": "support_message",
+            "type": "wysiwyg",
+            "instructions": "Skriv den \u00f8nskede tekst til Support widgetten.",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_53ed5a958436b",
+                        "operator": "==",
+                        "value": "0"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "layout": "horizontal",
+            "choices": {
+                "1": "Ja",
+                "0": "Nej"
+            },
+            "default_value": 0,
+            "other_choice": 0,
+            "save_other_choice": 0,
+            "allow_null": 0,
+            "return_format": "value",
+            "key": "field_53ed7553101bb",
+            "label": "Deaktiver \"Lavet af\" teksten nederst.",
+            "name": "disable_en_del_af",
+            "type": "radio",
+            "instructions": "Deaktiver \"Lavet af\" teksten nederst.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "default_value": "H\u00f8ks",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "Lavet af",
+            "append": "",
+            "key": "field_53ed75a5101bc",
+            "label": "\u00c6ndre Lavet af teksten",
+            "name": "update_en_del_af",
+            "type": "text",
+            "instructions": "\u00c6ndre \"Lavet af\" beskeden nederst.",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_53ed7553101bb",
+                        "operator": "==",
+                        "value": "0"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "layout": "horizontal",
+            "choices": {
+                "1": "Ja",
+                "0": "Nej"
+            },
+            "default_value": 0,
+            "other_choice": 0,
+            "save_other_choice": 0,
+            "allow_null": 0,
+            "return_format": "value",
+            "key": "field_53ed760f101bd",
+            "label": "Fjern \"WordPress Version\" nummeret nederst.",
+            "name": "disable_wordpress_version",
+            "type": "radio",
+            "instructions": "\u00d8nsker du at fjerne \"WordPress Version\" nummeret nederst.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "placement": "top",
+            "endpoint": 0,
+            "key": "field_56ccfca6bf7ed",
+            "label": "Facebook indstillinger",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "default_value": "<div class=\"fb-page\" data-href=\"https:\/\/www.facebook.com\/hoeksdk\/?fref=ts\" data-tabs=\"timeline\" data-width=\"500\" data-small-header=\"true\" data-adapt-container-width=\"true\" data-hide-cover=\"true\" data-show-facepile=\"false\"><div class=\"fb-xfbml-parse-ignore\"><blockquote cite=\"https:\/\/www.facebook.com\/hoeksdk\/?fref=ts\"><a href=\"https:\/\/www.facebook.com\/hoeksdk\/?fref=ts\">Høks.dk<\/a><\/blockquote><\/div><\/div>",
+            "new_lines": "",
+            "maxlength": "",
+            "placeholder": "",
+            "rows": "",
+            "key": "field_56ccfcb2bf7ee",
+            "label": "Widget Code",
+            "name": "fb_widget_code",
+            "type": "textarea",
+            "instructions": "Indsæt embed koden til dit <a href=\"https:\/\/developers.facebook.com\/docs\/plugins\/page-plugin\" target=\"_blank\">Facebook<\/a> feed.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "readonly": 0,
+            "disabled": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "admin_options"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "field",
+    "hide_on_screen": [
+        "permalink",
+        "the_content",
+        "excerpt",
+        "custom_fields",
+        "discussion",
+        "comments",
+        "revisions",
+        "slug",
+        "author",
+        "format",
+        "page_attributes",
+        "featured_image",
+        "categories",
+        "send-trackbacks"
+    ],
+    "active": 1,
+    "description": "",
+    "local": "php",
+    "modified": 1485513171
+}

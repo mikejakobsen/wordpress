@@ -1,0 +1,39 @@
+{
+  "entry": {
+    "main": [
+      "./scripts/main.js",
+      "./styles/main.scss"
+    ],
+    "customizer": [
+      "./scripts/customizer.js"
+    ],
+    "admin/admin": [
+      "./styles/admin.scss",
+      "./scripts/admin-login.js",
+      "./scripts/admin.js",
+      "./images/admin/favicon.png",
+      "./images/admin/tema-logo.png",
+      "./images/admin/logo-white.png"
+    ],
+    "admin/dashboard": [
+      "./styles/dashboard.scss"
+    ],
+    "admin/login": [
+      "./styles/login.scss"
+    ],
+    "editor-style": [
+      "./styles/editor-style.scss"
+    ],
+    "white": [
+      "./images/white.png"
+    ]
+  },
+  "watch": [
+    "templates/**/*.php",
+    "src/**/*.php"
+  ],
+  "publicPath": "/app/themes/frisor",
+  "devUrl": "http://frisor.dev",
+  "proxyUrl": "http://localhost:5000",
+  "cacheBusting": "[name]_[hash:8]"
+}

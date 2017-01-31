@@ -1,0 +1,53 @@
+@import "common/variables";
+// bower:scss
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins";
+@import "~bootstrap/scss/navbar";
+@import "~bootstrap/scss/nav";
+
+
+// Admin
+.wp_option_title {
+  font-size: 130%;
+}
+
+#wp_support_widget {
+
+  .wp_support_widget_logo {
+    float: left;
+    padding: 0 15px 0 0;
+
+    img {
+      float: left;
+    }
+
+  }
+
+}
+#instagram{
+  margin-top: 15px;
+  img{
+    margin-right: 15px;
+    margin-bottom: 15px;
+  }
+}
+
+/* Admin area customization */
+#project_catdiv{
+  display: none;
+}
+
+/* User Page customization */
+#your-profile{
+  .user-rich-editing-wrap,
+  .user-admin-color-wrap,
+  .user-comment-shortcuts-wrap,
+  .user-admin-bar-front-wrap,
+  .user-profile-picture,
+  .user-url-wrap,
+  h2:first-of-type
+  {
+    display: none;
+  }
+
+}

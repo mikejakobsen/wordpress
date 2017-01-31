@@ -1,0 +1,24 @@
+{
+  "cache": true,
+  "devFile": false,
+  "dest": "./assets/scripts/modernizr.js",
+  "options": [
+    "setClasses",
+    "addTest",
+    "html5printshiv",
+    "testProp",
+    "fnBind",
+    "mq"
+  ],
+  "uglify": false,
+  "tests": [
+    "cssanimations",
+    "cssgradients",
+    "video",
+    "backgroundsize"
+  ],
+  "excludeTests": [],
+  "crawl": false,
+  "useBuffers": false,
+  "customTests": []
+}

@@ -1,0 +1,53 @@
+{
+  "name": "frisorweb",
+  "type": "wordpress-theme",
+  "license": "MIT",
+  "description": "FrisørWeb",
+  "homepage": "https://hoeks.dk",
+  "authors": [
+    {
+      "name": "Mike Jakobsen",
+      "email": "mike@jakobsen.dk",
+      "homepage": "http://www.mikejakobsen.com"
+    },
+    {
+      "name": "Scott Walkinshaw",
+      "email": "scott.walkinshaw@gmail.com",
+      "homepage": "https://github.com/swalkinshaw"
+    }
+  ],
+  "keywords": [
+    "wordpress"
+  ],
+  "support": {
+    "issues": "https://github.com/roots/sage/issues",
+    "forum": "https://discourse.roots.io/"
+  },
+  "autoload": {
+    "psr-4": {
+      "Roots\\Sage\\": "src/lib/Sage/",
+      "App\\": "src/lib/App/"
+    }
+  },
+  "require": {
+    "php": ">=5.6.4",
+    "composer/installers": "~1.0",
+    "illuminate/view": "~5.3.0"
+  },
+  "require-dev": {
+    "squizlabs/php_codesniffer": "^2.5.1",
+    "jjgrainger/wp-custom-post-type-class": "dev-master",
+    "phpmd/phpmd": "^2.4.2",
+    "10up/wp_mock": "dev-master",
+    "phpunit/phpunit": "~3.7@stable",
+    "fzaninotto/faker": "^1.6",
+    "tightenco/collect": "^5.3"
+  },
+  "scripts": {
+    "test": [
+      "vendor/bin/phpunit",
+      "vendor/bin/phpcs",
+      "vendor/bin/phpmd src text cleancode,codesize,controversial,design,naming,unusedcode"
+    ]
+  }
+}

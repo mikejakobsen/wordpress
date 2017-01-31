@@ -1,0 +1,7 @@
+@import "dependencies";
+
+.body {
+  h1 {
+    @include transition(.4s);
+  }
+}
