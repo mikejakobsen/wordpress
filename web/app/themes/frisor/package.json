@@ -82,7 +82,7 @@
   },
   "dependencies": {
     "animate.css": "github:daneden/animate.css#v3.1.0",
-    "bootstrap": "github:twbs/bootstrap#v4-dev",
+    "bootstrap": "4.0.0-alpha.6",
     "chokidar": "1.6.0",
     "compass-mixins": "^0.12.10",
     "customizr": "^1.0.0-alpha",

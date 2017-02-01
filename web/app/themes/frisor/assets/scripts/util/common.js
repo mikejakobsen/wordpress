@@ -48,6 +48,8 @@ export const Common = {
       }
     });
   },
+
 };
+
 
 export default Common;

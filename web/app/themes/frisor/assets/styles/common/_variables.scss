@@ -10,6 +10,11 @@ $img-path: "../images/";
 $main-sm-columns: 12;
 $sidebar-sm-columns: 4;
 
+// Small screen / tablet
+//** Deprecated `$screen-sm` as of v3.0.1
+$screen-sm:                  768px !default;
+$screen-sm-min:              $screen-sm !default;
+
 // Colors
 $brand-primary: #27ae60;
 

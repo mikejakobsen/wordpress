@@ -30,7 +30,9 @@
   },
   "watch": [
     "templates/**/*.php",
-    "src/**/*.php"
+    "src/**/*.php",
+    "assets/styles/*.scss",
+    "assets/scripts/*.js"
   ],
   "publicPath": "/app/themes/frisor",
   "devUrl": "http://frisor.dev",

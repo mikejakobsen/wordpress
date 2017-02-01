@@ -1,4 +1,3 @@
-<!doctype html>
 <html>
 @include('partials.head')
 <body @php body_class() @endphp>

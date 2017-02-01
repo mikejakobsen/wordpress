@@ -1,12 +1,20 @@
 {
-    "key": "group_588b3721e324f",
-    "title": "Prisliste",
+    "key": "group_5891aa111815e",
+    "title": "Prisliste page-tempalte",
     "fields": [
         {
-            "key": "field_588b3ae76f502",
-            "label": "Prisliste",
-            "name": "prisliste",
-            "type": "table",
+            "post_type": [
+                "prisliste"
+            ],
+            "taxonomy": [],
+            "allow_null": 1,
+            "multiple": 1,
+            "return_format": "object",
+            "ui": 1,
+            "key": "field_5891aa1fd06fb",
+            "label": "Prislister",
+            "name": "prislister",
+            "type": "post_object",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -14,27 +22,25 @@
                 "width": "",
                 "class": "",
                 "id": ""
-            },
-            "use_header": 0
+            }
         }
     ],
     "location": [
         [
             {
-                "param": "post_type",
+                "param": "page_template",
                 "operator": "==",
-                "value": "prisliste"
+                "value": "templates\/page-prisliste.blade.php"
             }
         ]
     ],
     "menu_order": 0,
-    "position": "acf_after_title",
+    "position": "normal",
     "style": "seamless",
     "label_placement": "top",
     "instruction_placement": "label",
     "hide_on_screen": [
         "permalink",
-        "the_content",
         "excerpt",
         "custom_fields",
         "discussion",
@@ -51,5 +57,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1485933486
+    "modified": 1485946061
 }

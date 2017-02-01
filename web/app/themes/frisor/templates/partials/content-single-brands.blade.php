@@ -7,7 +7,7 @@
       <?php if( have_rows('brands') ): ?>
 
         <?php while( have_rows('brands') ): the_row(); ?>
-        <div class="col-xs-12 col-md-4 brands__item">
+        <div class="col col-md-4 brands__item">
 
           <h3 class="brands__name"><?php the_sub_field('brand__navn'); ?></h3>
 

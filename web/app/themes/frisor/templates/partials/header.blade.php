@@ -1,22 +1,33 @@
 <header class="banner">
   <div class="container">
-    <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
-      <a class="navbar-brand" title="" href="<?= esc_url( home_url( '/' ) ); ?>"><?= get_bloginfo( 'name' ); ?></a>
-      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbar-content"
-                                                                                              aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <?php
+    <a class="navbar-brand" href="<?= esc_url(home_url('/')); ?>"></a>
+
+    <nav class="nav-primary navbar" role="navigation">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#sp-navbar-collapse-1">
+            <div class="mobile-burger">
+              <span class="sr-only">Toggle navigation</span>
+              <div class="bar bar-left"></div>
+              <div class="bar bar-middle"></div>
+              <div class="bar bar-right"></div>
+            </div>
+          </button>
+          <a href="#">
+            <div class="logo" href="/">
+              <a href="/" class="">
+                FrisørWeb
+              </a>
+            </div>
+          </a>
+        </div>
+
+        <?php
         if (has_nav_menu('primary_navigation')) :
-          wp_nav_menu([
-            'theme_location'  => 'primary_navigation',
-            'container_id'    => 'navbar-content',
-            'container_class' => 'collapse navbar-collapse',
-            'menu_class'      => 'nav navbar-nav',
-            'walker'          => new Bootstrap_Walker_Nav_Menu()
-          ]);
+          wp_nav_menu(['theme_location' => 'primary_navigation', 'menu_class' => 'nav navbar-nav navbar-right collapse navbar-collapse', 'menu_id' => 'sp-navbar-collapse-1']);
         endif;
         ?>
+      </div>
     </nav>
   </div>
 </header>
