@@ -1,28 +1,33 @@
 <article @php post_class() @endphp>
-    <header>
-        <h1 class="brands__heading">{{ get_the_title() }}</h1>
-    </header>
-    <div class="brands">
-      <div class="row-eq-height brands__row">
-      <?php if( have_rows('brands') ): ?>
+  <?php
+    $post_objects = get_field('brands');
 
-        <?php while( have_rows('brands') ): the_row(); ?>
-        <div class="col col-md-4 brands__item">
+  if( $post_objects ): ?>
 
-          <h3 class="brands__name"><?php the_sub_field('brand__navn'); ?></h3>
+  <div class="brands">
+      @foreach( $post_objects as $post_object)
+        @php
+          $brands = get_field('brand__name', $post_object->ID);
+          if ( $brands )
+            var_dump($brands);
+            echo '<table class="prisliste__table table table-striped">';
+            if ( $brands['brands__name'] ) {
+              echo '<thead class="prisliste__heading">';
+              echo '<tr>';
+              foreach ( $brands['brand__image'] as $th ) {
+                echo '<th>';
+                echo $th['c'];
+                echo '</th>';
+              }
+              echo '</tr>';
+              echo '</thead>';
+            }
+        @endphp
+      @endforeach
+  <?php endif; ?>
 
-          <img class="brands__image" src="<?php the_sub_field('brand__billede'); ?>" alt="" />
-
-          <p class="brands__description"><?php the_sub_field('brand__beskrivelse'); ?></p>
-
-
-        </div>
-        <?php endwhile; ?>
-
-      <?php endif; ?>
-      </div>
-    </div>
-    <footer>
-        {!! wp_link_pages(['before' => '<nav class="page-nav"><p>' . __('Pages:', 'sage'), 'after' => '</p></nav>']) !!}
-    </footer>
-</article>
+  <footer>
+  {!! wp_link_pages(['before' => '<nav class="page-nav"><p>' . __('Pages:', 'sage'), 'after' => '</p></nav>']) !!}
+  </footer>
+  </article>
+  <?php wp_reset_postdata() ?>

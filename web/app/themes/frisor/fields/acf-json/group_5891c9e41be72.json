@@ -1,19 +1,19 @@
 {
-    "key": "group_5891aa111815e",
-    "title": "Prisliste page-template",
+    "key": "group_5891c9e41be72",
+    "title": "Brands page-template",
     "fields": [
         {
             "post_type": [
-                "prisliste"
+                "brands"
             ],
             "taxonomy": [],
             "allow_null": 1,
             "multiple": 1,
             "return_format": "object",
             "ui": 1,
-            "key": "field_5891aa1fd06fb",
-            "label": "Prislister",
-            "name": "prislister",
+            "key": "field_5891c9e41d78b",
+            "label": "Brands",
+            "name": "brands",
             "type": "post_object",
             "instructions": "",
             "required": 0,
@@ -30,7 +30,7 @@
             {
                 "param": "page_template",
                 "operator": "==",
-                "value": "templates\/page-prisliste.blade.php"
+                "value": "templates\/page-brands.blade.php"
             }
         ]
     ],
@@ -57,5 +57,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1485949610
+    "modified": 1485949597
 }

@@ -8,5 +8,5 @@ Template Name: Prisliste
 
 @section('content')
     @include('partials.page-header')
-    @include('partials/content-single-prisliste')
+    @include('partials.content-single-prisliste')
 @endsection

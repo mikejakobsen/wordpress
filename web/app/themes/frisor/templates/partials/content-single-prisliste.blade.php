@@ -1,9 +1,10 @@
 <article @php post_class() @endphp>
-  <div class="prisliste">
     <?php
       $post_objects = get_field('prislister');
 
     if( $post_objects ): ?>
+
+  <div class="prisliste">
       @foreach( $post_objects as $post_object)
         @php
           $table = get_field('prisliste', $post_object->ID);
