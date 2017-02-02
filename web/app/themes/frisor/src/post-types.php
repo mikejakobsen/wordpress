@@ -18,11 +18,9 @@ $prisliste = new CPT(array(
     'slug' => 'Priser'
 ));
 
-
 $medarbejdere = new CPT(array(
     'post_type_name' => 'Medarbejdere',
     'singular' => 'Medarbejder',
     'plural' => 'Medarbejdere',
-    'slug' => 'Medarbejder',
-    'publicly_queryable' => 'true'
+    'slug' => 'Medarbejdere'
 ));

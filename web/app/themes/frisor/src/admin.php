@@ -10,18 +10,6 @@ require_once 'utils.php';
 
 if (function_exists('acf_add_options_page')) {
     acf_add_options_page(array(
-        'page_title' => 'Udseende',
-        'menu_title' => 'Udseende',
-        'menu_slug' => 'theme_options',
-        'parent_slug' => '',
-        'capability' => 'edit_posts',
-        'position' => '99.2',
-        'icon_url' => 'dashicons-admin-site',
-        'redirect' => true
-
-    ));
-
-    acf_add_options_page(array(
         'page_title' => 'FrisørWeb',
         'menu_title' => 'FrisørWeb',
         'menu_slug' => 'admin_options',
