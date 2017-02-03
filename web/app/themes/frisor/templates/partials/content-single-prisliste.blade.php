@@ -9,7 +9,7 @@
         @php
           $table = get_field('prisliste', $post_object->ID);
           if ( $table ) {
-            echo '<table class="prisliste__table table table-striped">';
+            echo '<table class="prisliste__table table">';
             if ( $table['header'] ) {
               echo '<thead class="prisliste__heading">';
               echo '<tr>';

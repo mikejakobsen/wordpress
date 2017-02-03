@@ -6,13 +6,13 @@
     "Mike Jakobsen <mike@jakobsen.dk>"
   ],
   "license": "MIT",
-  "homepage": "",
+  "homepage": "https://github.com/mikejakobsen/wordpress",
+  "private": true,
   "ignore": [
     "**/.*",
     "node_modules",
     "bower_components",
     "test",
     "tests"
-  ],
-  "dependencies": {}
+  ]
 }

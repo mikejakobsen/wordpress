@@ -3,16 +3,54 @@
     "title": "Udseende",
     "fields": [
         {
-            "default_value": "",
-            "maxlength": "",
+            "multiple": 0,
+            "allow_null": 0,
+            "choices": {
+                "1": "Lato & Merriweather",
+                "2": "Montserrat & Neuton",
+                "3": "Playfair Display & Open Sans",
+                "4": "Oswald & Merriweather"
+            },
+            "default_value": [],
+            "ui": 1,
+            "ajax": 0,
             "placeholder": "",
-            "prepend": "",
-            "append": "",
+            "return_format": "value",
             "key": "field_58822008c0b65",
-            "label": "Indstillinger",
-            "name": "indstillinger",
-            "type": "text",
-            "instructions": "",
+            "label": "Typografi",
+            "name": "font_family",
+            "type": "select",
+            "instructions": "V\u00e6lg en typografi",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "default_value": "#000000",
+            "key": "field_5893350afc02e",
+            "label": "Tekstfarve",
+            "name": "text_color",
+            "type": "color_picker",
+            "instructions": "V\u00e6lg en prim\u00e6r tekstfarve",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "default_value": "#000000",
+            "key": "field_589339f2c0b8e",
+            "label": "Linkfarve",
+            "name": "link_color",
+            "type": "color_picker",
+            "instructions": "V\u00e6lg en link farve",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -55,5 +93,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1485860011
+    "modified": 1486043661
 }

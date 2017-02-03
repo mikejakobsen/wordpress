@@ -1,16 +1,16 @@
 {
-    "key": "group_588f271ce127e",
-    "title": "Brands",
+    "key": "group_58930736c1a0c",
+    "title": "Medarbejdere",
     "fields": [
         {
             "default_value": "",
-            "maxlength": "",
+            "maxlength": 130,
             "placeholder": "",
             "prepend": "",
             "append": "",
-            "key": "field_588f311b97b1c",
-            "label": "Brand",
-            "name": "brand__name",
+            "key": "field_5893074eda212",
+            "label": "Navn",
+            "name": "employee__name",
             "type": "text",
             "instructions": "",
             "required": 1,
@@ -22,7 +22,26 @@
             }
         },
         {
-            "return_format": "url",
+            "default_value": "",
+            "maxlength": 50,
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "key": "field_58930771da213",
+            "label": "Stilling",
+            "name": "employee__job",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "return_format": "array",
             "preview_size": "thumbnail",
             "library": "all",
             "min_width": "",
@@ -32,9 +51,9 @@
             "max_height": "",
             "max_size": "",
             "mime_types": "",
-            "key": "field_5891e4507652b",
-            "label": "Brand logo",
-            "name": "brand__image",
+            "key": "field_58930785da214",
+            "label": "Billede",
+            "name": "employee__photo",
             "type": "image",
             "instructions": "",
             "required": 0,
@@ -51,13 +70,13 @@
             {
                 "param": "post_type",
                 "operator": "==",
-                "value": "brands"
+                "value": "medarbejdere"
             }
         ]
     ],
     "menu_order": 0,
     "position": "normal",
-    "style": "default",
+    "style": "seamless",
     "label_placement": "top",
     "instruction_placement": "label",
     "hide_on_screen": [
@@ -79,5 +98,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1486023314
+    "modified": 1486031126
 }

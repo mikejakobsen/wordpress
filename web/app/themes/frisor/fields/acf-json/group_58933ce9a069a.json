@@ -1,0 +1,206 @@
+{
+    "key": "group_58933ce9a069a",
+    "title": "Kontaktinformation",
+    "fields": [
+        {
+            "message": "<h3>Fris\u00f8rWeb Kontaktinformationer.<\/br>Her du alt relevant stamdata til din side<\/h3>",
+            "esc_html": 0,
+            "new_lines": "wpautop",
+            "key": "field_5893411b14cb1",
+            "label": "",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "placement": "top",
+            "endpoint": 0,
+            "key": "field_5893405481940",
+            "label": "Kontakt Information",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "key": "field_58933dfb70004",
+            "label": "Navn",
+            "name": "contact_name",
+            "type": "text",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "key": "field_58933e1246478",
+            "label": "Adresse",
+            "name": "contact_address",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "default_value": "",
+            "min": "",
+            "max": "",
+            "step": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "key": "field_58933e276a219",
+            "label": "Post nr",
+            "name": "contact_zip",
+            "type": "number",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "key": "field_58933e40819e2",
+            "label": "By",
+            "name": "contact_city",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "default_value": "",
+            "min": "",
+            "max": "",
+            "step": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "key": "field_58933e4a73b3b",
+            "label": "Telefon nr",
+            "name": "contact_phone",
+            "type": "number",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "key": "field_58933e5bbc5a9",
+            "label": "\u00c5bningstider",
+            "name": "contact_openinghours",
+            "type": "table",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "use_header": 2
+        },
+        {
+            "placement": "left",
+            "endpoint": 1,
+            "key": "field_58934033b4a57",
+            "label": "Sociale Medier",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "default_value": "<div class=\"fb-page\" data-href=\"https:\/\/www.facebook.com\/hoeksdk\/?fref=ts\"\r\ndata-tabs=\"timeline\" data-width=\"500\" data-small-header=\"true\" data-adapt-container-width=\"true\"\r\ndata-hide-cover=\"true\" data-show-facepile=\"false\"><div class=\"fb-xfbml-parse-ignore\">\r\n<blockquote cite=\"https:\/\/www.facebook.com\/hoeksdk\/?fref=ts\">\r\n<a href=\"https:\/\/www.facebook.com\/hoeksdk\/?fref=ts\">H\u00f8ks.dk<\/a><\/blockquote><\/div><\/div>",
+            "new_lines": "wpautop",
+            "maxlength": "",
+            "placeholder": "",
+            "rows": "",
+            "key": "field_5893406481941",
+            "label": "Facebook",
+            "name": "facebook",
+            "type": "textarea",
+            "instructions": "Ins\u00e6t embed koden til dit <a href=\"https:\/\/developers.facebook.com\/docs\/plugins\/page-plugin\" target=\"_blank\">Facebook<\/a> feed.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "site_info"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1486045536
+}

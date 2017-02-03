@@ -19,10 +19,9 @@
   ],
   "scripts": {
     "build": "webpack --progress --config assets/build/v2/webpack.config.js",
-    "build:production": "webpack --progress -p --config assets/build/v2/webpack.config.js && node favicon",
+    "build:production": "webpack --progress -p --config assets/build/v2/webpack.config.js",
     "build:profile": "webpack --progress --profile --json --config assets/build/v2/webpack.config.js",
     "watch": "webpack --hide-modules --watch --config assets/build/v2/webpack.config.js",
-    "favicon": "node favicon.js",
     "clean": "node node_modules/rimraf/bin.js dist",
     "lint": "node node_modules/eslint/bin/eslint.js assets/scripts assets/build",
     "test": "npm run lint -s",
@@ -75,18 +74,18 @@
     "sass-loader": "^4.1.0",
     "style-loader": "^0.13.1",
     "url-loader": "^0.5.7",
-    "webpack": "^2.2.0-rc.1",
+    "webpack": "^2.2.1",
     "webpack-assets-manifest": "^0.6.1",
     "webpack-dev-middleware": "^1.9.0",
     "webpack-hot-middleware": "^2.13.1"
   },
   "dependencies": {
     "animate.css": "github:daneden/animate.css#v3.1.0",
-    "bootstrap": "4.0.0-alpha.6",
+    "bootstrap": "^4.0.0-alpha.6",
     "chokidar": "1.6.0",
     "compass-mixins": "^0.12.10",
     "customizr": "^1.0.0-alpha",
-    "favicons": "github:igniteonline/favicons",
+    "eslint-plugin-import": "^1.16.0",
     "font-awesome": "^4.7.0",
     "hamburgers": "^0.7.0",
     "hover.css": "^2.0.2",
@@ -104,6 +103,7 @@
     "vue-html-loader": "^1.2.3",
     "vue-loader": "^10.0.2",
     "vue-style-loader": "^1.0.0",
+    "vue-template-compiler": "^2.1.10",
     "vue-touch": "github:vuejs/vue-touch#next"
   }
 }

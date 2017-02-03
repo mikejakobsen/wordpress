@@ -4,7 +4,7 @@
  * Do not edit anything in this file unless you know what you're doing
  */
 /**
- * Here's what's happening with these hooks:
+
  * 1. WordPress detects theme in themes/sage
  * 2. When we activate, we tell WordPress that the theme is actually in themes/sage/templates
  * 3. When we call get_template_directory() or get_template_directory_uri(), we point it back to themes/sage
@@ -46,6 +46,8 @@ $sage_includes = [
     'src/acf-config.php',   // Custom ACF settings
     'src/helpers.php',      // Admin Utility functions
     'src/setup.php',        // Theme setup
+    'src/theme-settings.php',        // Theme setup
+    'src/theme-options.php',        // Theme setup
     'src/filters.php',      // Filters
     'src/admin.php',        // Admin Utility functions
     'src/actions.php',      // Actions
