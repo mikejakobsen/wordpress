@@ -7,16 +7,19 @@
                 "brands"
             ],
             "taxonomy": [],
-            "allow_null": 1,
-            "multiple": 1,
+            "min": "",
+            "max": "",
+            "filters": [
+                "post_type"
+            ],
+            "elements": "",
             "return_format": "object",
-            "ui": 1,
             "key": "field_5891c9e41d78b",
             "label": "Brands",
             "name": "brands",
-            "type": "post_object",
+            "type": "relationship",
             "instructions": "",
-            "required": 0,
+            "required": 1,
             "conditional_logic": 0,
             "wrapper": {
                 "width": "",
@@ -36,7 +39,7 @@
     ],
     "menu_order": 0,
     "position": "normal",
-    "style": "seamless",
+    "style": "default",
     "label_placement": "top",
     "instruction_placement": "label",
     "hide_on_screen": [
@@ -57,5 +60,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1485949597
+    "modified": 1486117647
 }

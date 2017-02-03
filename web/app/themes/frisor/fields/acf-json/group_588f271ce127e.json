@@ -4,13 +4,13 @@
     "fields": [
         {
             "default_value": "",
-            "maxlength": "",
+            "maxlength": 144,
             "placeholder": "",
             "prepend": "",
             "append": "",
             "key": "field_588f311b97b1c",
-            "label": "Brand",
-            "name": "brand__name",
+            "label": "Beskrivelse",
+            "name": "brand__description",
             "type": "text",
             "instructions": "",
             "required": 1,
@@ -71,7 +71,6 @@
         "slug",
         "author",
         "format",
-        "page_attributes",
         "featured_image",
         "categories",
         "tags",
@@ -79,5 +78,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1486023314
+    "modified": 1486117256
 }
