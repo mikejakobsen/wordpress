@@ -1,23 +1,18 @@
 {
-    "key": "group_5891c9e41be72",
-    "title": "Brands page-template",
+    "key": "group_58a2d808dc225",
+    "title": "Kontakt",
     "fields": [
         {
-            "post_type": [
-                "brands"
-            ],
-            "taxonomy": [],
-            "min": "",
-            "max": "",
-            "filters": "",
-            "elements": "",
-            "return_format": "object",
-            "key": "field_5891c9e41d78b",
-            "label": "Brands",
-            "name": "brands",
-            "type": "relationship",
+            "height": "",
+            "center_lat": "",
+            "center_lng": "",
+            "zoom": "",
+            "key": "field_58a2d817336a4",
+            "label": "Kort",
+            "name": "google_maps",
+            "type": "google_map",
             "instructions": "",
-            "required": 1,
+            "required": 0,
             "conditional_logic": 0,
             "wrapper": {
                 "width": "",
@@ -31,7 +26,7 @@
             {
                 "param": "page_template",
                 "operator": "==",
-                "value": "templates\/page-brands.blade.php"
+                "value": "templates\/page-kontakt.blade.php"
             }
         ]
     ],
@@ -47,10 +42,8 @@
         "discussion",
         "comments",
         "revisions",
-        "slug",
         "author",
         "format",
-        "page_attributes",
         "featured_image",
         "categories",
         "tags",
@@ -58,5 +51,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1486118158
+    "modified": 1487067610
 }

@@ -16,7 +16,7 @@
           <a href="#">
             <div class="logo" href="/">
               <a href="/" class="">
-                FrisørWeb
+                    <h1>{{ the_field('global_title', 'option') }}</h1>
               </a>
             </div>
           </a>

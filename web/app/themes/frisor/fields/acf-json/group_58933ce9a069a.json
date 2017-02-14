@@ -1,9 +1,9 @@
 {
     "key": "group_58933ce9a069a",
-    "title": "Kontaktinformation",
+    "title": "Ops\u00e6tning",
     "fields": [
         {
-            "message": "<h3>Fris\u00f8rWeb Kontaktinformationer.<\/br>Her du alt relevant stamdata til din side<\/h3>",
+            "message": "<h3>Fris\u00f8rWeb Informationer.<\/br>Her finder du alle relevante indstillinger for din hjemmeside.<\/h3>",
             "esc_html": 0,
             "new_lines": "wpautop",
             "key": "field_5893411b14cb1",
@@ -20,7 +20,61 @@
             }
         },
         {
-            "placement": "top",
+            "placement": "left",
+            "endpoint": 0,
+            "key": "field_58a2d134216b4",
+            "label": "Side",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "key": "field_58a2d159dc29e",
+            "label": "Titel",
+            "name": "global_title",
+            "type": "text",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "key": "field_58a2d177dc29f",
+            "label": "Undertitel",
+            "name": "global_subtitle",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "placement": "left",
             "endpoint": 0,
             "key": "field_5893405481940",
             "label": "Kontakt Information",
@@ -150,8 +204,54 @@
             "use_header": 2
         },
         {
+            "default_value": 0,
+            "message": "\u00d8nsker du at tilf\u00f8je en uddybende tekst til \u00e5bningstiderne? Fx. helligdage eller lukke dage.",
+            "ui": 1,
+            "ui_on_text": "Ja",
+            "ui_off_text": "Nej",
+            "key": "field_58a2d32e19419",
+            "label": "\u00c5bningstider tekstfelt",
+            "name": "contact_openinghours_textfield",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "default_value": "",
+            "maxlength": 144,
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "key": "field_58a2d2f8d3e76",
+            "label": "Yderligere infoe",
+            "name": "contact_openinghours_textfield",
+            "type": "text",
+            "instructions": "Indtast yderligere info til \u00e5bningstider.",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_58a2d32e19419",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
             "placement": "left",
-            "endpoint": 1,
+            "endpoint": 0,
             "key": "field_58934033b4a57",
             "label": "Sociale Medier",
             "name": "",
@@ -202,5 +302,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1486045536
+    "modified": 1487066141
 }

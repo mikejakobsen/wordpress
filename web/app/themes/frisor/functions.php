@@ -52,6 +52,8 @@ $sage_includes = [
     'src/admin.php',        // Admin Utility functions
     'src/actions.php',      // Actions
     'src/post-types.php',   // Custom Post Types,
+    'src/google-maps.php',   // Custom Post Types,
+
     // 'src/navbar.php',       // Bootstrap 4 navbar
     // 'src/query.php',     // Custom Post Types,
     // 'src/meta-query.php',     // Meta query
