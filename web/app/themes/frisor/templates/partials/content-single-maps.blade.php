@@ -3,13 +3,13 @@
 
     $location = get_field('google_maps');
 
-  if( !empty($location) ):
-    ?>
+    if( !empty($location) ):
+  ?>
 
-<div class="acf-map">
-  <div class="marker" data-lat="<?php echo $location['lat']; ?>" data-lng="<?php echo $location['lng']; ?>"></div>
-</div>
-<?php endif; ?>
+  <div class="acf-map">
+    <div class="marker" data-lat="<?php echo $location['lat']; ?>" data-lng="<?php echo $location['lng']; ?>"></div>
+  </div>
+  <?php endif; ?>
 
 </article>
 <style type="text/css">
@@ -27,7 +27,9 @@
 }
 
 </style>
-<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY"></script>
+<!-- #TODO: Make webpack load this -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC2poW8VMP3nZRRKXF1-Ndm2A7DegLiSts"></script>
 <script type="text/javascript">
 (function($) {
 

@@ -6,7 +6,7 @@
             "height": "",
             "center_lat": "",
             "center_lng": "",
-            "zoom": "",
+            "zoom": 20,
             "key": "field_58a2d817336a4",
             "label": "Kort",
             "name": "google_maps",
@@ -51,5 +51,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1487067610
+    "modified": 1487153800
 }
