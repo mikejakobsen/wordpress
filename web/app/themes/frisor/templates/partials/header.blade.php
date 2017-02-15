@@ -15,9 +15,7 @@
           </button>
           <a href="#">
             <div class="logo" href="/">
-              <a href="/" class="">
-                    <h1>{{ the_field('global_title', 'option') }}</h1>
-              </a>
+              <!-- <a href="<?php echo site_url(); ?>"><img src="<?php echo $url; ?>" alt="<?php echo $alt; ?>" width="<?php echo $width; ?>" height="<?php echo $height; ?>" /></a> -->
             </div>
           </a>
         </div>

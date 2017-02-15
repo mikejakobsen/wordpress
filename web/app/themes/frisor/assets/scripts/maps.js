@@ -1,37 +1,3 @@
-<article class="maps" @php post_class() @endphp>
-  <?php if( have_rows('google_maps') ): ?>
-  <div class="acf-map">
-    <?php while ( have_rows('google_maps') ) : the_row();
-
-      $location = get_sub_field('google_maps_location');
-
-    ?>
-    <div class="marker" data-lat="<?php echo $location['lat']; ?>" data-lng="<?php echo $location['lng']; ?>">
-      <p><?php the_sub_field('google_maps_title'); ?></p>
-    </div>
-    <?php endwhile; ?>
-  </div>
-  <?php endif; ?>
-</article>
-<style type="text/css">
-
-.acf-map {
-  width: 100%;
-  height: 400px;
-  border: #ccc solid 1px;
-  margin: 20px 0;
-}
-
-/* fixes potential theme css conflict by inheritance */
-.acf-map img {
-  max-width: inherit !important;
-}
-
-</style>
-<!-- #TODO: Make webpack load this -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.js"></script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC2poW8VMP3nZRRKXF1-Ndm2A7DegLiSts"></script>
-<script type="text/javascript">
 (function($) {
 
   /*
@@ -160,6 +126,7 @@
     });
 
     // only 1 marker?
+    // Center for this marker only
     if( map.markers.length == 1 )
     {
       // set center of map
@@ -190,9 +157,8 @@
   var map = null;
 
   $(document).ready(function(){
-
+    // Instanciate on each of the elements
     $('.acf-map').each(function(){
-
       // create map
       map = new_map( $(this) );
 
@@ -201,4 +167,3 @@
   });
 
 })(jQuery);
-</script>
