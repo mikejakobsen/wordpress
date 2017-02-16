@@ -105,9 +105,13 @@
     // var
     var latlng = new google.maps.LatLng( $marker.attr('data-lat'), $marker.attr('data-lng') );
 
+    // #TODO: Add custom icon, add another path
+    var iconBase = 'https://maps.google.com/mapfiles/kml/shapes/';
+
     // create marker
     var marker = new google.maps.Marker({
       position	: latlng,
+      icon: iconBase + 'parking_lot_maps.png',
       map			: map
     });
 
@@ -190,6 +194,7 @@
   var map = null;
 
   $(document).ready(function(){
+    // Engage when page is fully loaded
 
     $('.acf-map').each(function(){
 

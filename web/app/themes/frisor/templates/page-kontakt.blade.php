@@ -9,5 +9,6 @@ Template Name: Kontakt
 @section('content')
     @include('partials.page-header')
     @include('partials.content-single-maps')
+    @include('partials.content-single-instagram')
 @endsection
 

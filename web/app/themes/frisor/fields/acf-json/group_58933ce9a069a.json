@@ -307,6 +307,25 @@
                 "class": "",
                 "id": ""
             }
+        },
+        {
+            "default_value": "@brugernavn",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "key": "field_58a589e9994be",
+            "label": "Instagram",
+            "name": "instagram_user",
+            "type": "text",
+            "instructions": "Indtast det \u00f8nskede instagram brugernavn. Eller hent billede fra et hashtag ved at starte med #",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
         }
     ],
     "location": [
@@ -326,5 +345,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1487154321
+    "modified": 1487245903
 }
