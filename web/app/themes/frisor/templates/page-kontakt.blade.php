@@ -9,7 +9,6 @@ Template Name: Kontakt
 @section('content')
   @while(have_posts()) @php(the_post())
     @include('partials.page-header')
-    @include('partials.content-page')
     @include('partials.content-single-maps')
     @include('partials.content-single-instagram')
   @endwhile

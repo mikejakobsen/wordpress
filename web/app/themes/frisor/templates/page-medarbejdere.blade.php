@@ -11,6 +11,7 @@ Template Name: Medarbejdere
     @include('partials.page-header')
     @include('partials.content-page')
     @include('partials/content-single-medarbejdere')
+    @include('partials/content-single-facebook')
   @endwhile
 @endsection
 

@@ -80,6 +80,10 @@ add_action('widgets_init', function () {
             'id'            => 'instagram'
         ] + $config);
     register_sidebar([
+            'name'          => __('Facebook', 'sage'),
+            'id'            => 'facebook'
+        ] + $config);
+    register_sidebar([
             'name'          => __('Footer', 'sage'),
             'id'            => 'sidebar-footer'
         ] + $config);

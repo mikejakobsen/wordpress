@@ -290,7 +290,7 @@
             }
         },
         {
-            "default_value": "<div class=\"fb-page\" data-href=\"https:\/\/www.facebook.com\/hoeksdk\/?fref=ts\"\r\ndata-tabs=\"timeline\" data-width=\"500\" data-small-header=\"true\" data-adapt-container-width=\"true\"\r\ndata-hide-cover=\"true\" data-show-facepile=\"false\"><div class=\"fb-xfbml-parse-ignore\">\r\n<blockquote cite=\"https:\/\/www.facebook.com\/hoeksdk\/?fref=ts\">\r\n<a href=\"https:\/\/www.facebook.com\/hoeksdk\/?fref=ts\">H\u00f8ks.dk<\/a><\/blockquote><\/div><\/div>",
+            "default_value": "https:\/\/www.facebook.com\/hoeksdk\/",
             "new_lines": "wpautop",
             "maxlength": "",
             "placeholder": "",
@@ -299,7 +299,7 @@
             "label": "Facebook",
             "name": "facebook",
             "type": "textarea",
-            "instructions": "Ins\u00e6t embed koden til dit <a href=\"https:\/\/developers.facebook.com\/docs\/plugins\/page-plugin\" target=\"_blank\">Facebook<\/a> feed.",
+            "instructions": "Inds\u00e6t adressen til din Facebook side, for at  vise p\u00e5 den p\u00e5 siden. \u00c5bn din Facebook side, og kopier derefter linket ind i boksen herunder",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -345,5 +345,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1487245903
+    "modified": 1487250499
 }
