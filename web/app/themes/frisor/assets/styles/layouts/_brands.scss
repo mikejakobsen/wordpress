@@ -2,15 +2,28 @@
 
 }
 .brands {
-  .brands__row {
-  }
-
+  @include make-row();
   .brand__item {
-    .brand__name {
+    margin: 0 auto;
+    @include make-col(12);
+    @include bp(m) {
+      @include make-col(6);
+    }
+    @include bp(l) {
+      @include make-col(4);
 
     }
-    img.brand__image {
-      margin: 0 auto;
+
+    .brand__name {
+      text-align: center;
+    }
+    .brand__description {
+
+    }
+    .brand__image {
+      max-width: 100%;
+      max-height: 200px;
+
     }
   }
 }

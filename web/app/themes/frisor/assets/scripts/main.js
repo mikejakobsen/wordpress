@@ -7,7 +7,6 @@ import Router from './util/router';
 import common from './routes/Common';
 import home from './routes/Home';
 import aboutUs from './routes/About';
-import brands from './routes/Brands';
 
 // jquery('.mobile-burger').on('click', () => {
 //   jquery('.bar-left').toggleClass('rotateL');
@@ -26,8 +25,6 @@ const routes = {
   home,
   // About us page, note the change from about-us to about_us.
   aboutUs,
-  // Brands page
-  brands,
 };
 
 // Load Events

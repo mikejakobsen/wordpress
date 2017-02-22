@@ -85,6 +85,7 @@
     "chokidar": "1.6.1",
     "compass-mixins": "^0.12.10",
     "customizr": "^1.0.0-alpha",
+    "ddbreakpoints": "^1.0.6",
     "eslint-plugin-jsx-a11y": "^4.0.0",
     "font-awesome": "^4.7.0",
     "hamburgers": "^0.7.0",
